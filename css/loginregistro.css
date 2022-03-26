@@ -1,29 +1,32 @@
 .tela {
-    background-image: url("Imagens/background.svg");
-}
-
-.logo {
-    position: absolute;
-    top: 10%;
-    left: 45%;
-    align-items: center;
+  padding: 0;
+  height: auto;
 }
 
 .entradas {
-    position: absolute;
-    top: 400px;
-    left: 42%;
-    height: 300px;
-    width: 360px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
 }
 
 .texto {
-    color: white;
-    font-family: monospace;
+  color: white;
+  font-family: monospace;
 }
 
 .esqueceu {
-    margin-top: 5px;
-    margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
+.whitetext {
+  color: white;
+}
+
+#termos {
+  color: white;
+}
+
+body {
+  background-image: url(../images/background_dashboard.png);
+}
