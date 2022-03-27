@@ -27,7 +27,7 @@
 
             <ul class="nav flex-column bg-white mb-0">
                 <li class="nav-item">
-                    <a href="#inicio" class="nav-link text-dark font-italic">
+                    <a href="Inicial.html" class="nav-link text-dark font-italic">
                         <i class="fa-solid fa-house-user mr-3 text-primary fa-fw"></i> Inicio
                     </a>
                 </li>
@@ -174,9 +174,101 @@
                     </table>
                     <br><br>
                     <footer>
-                        <a href="#tela-inicial"><img src="images/back.png" width="45px" width="45px">Voltar</a>
+                        <a href="Inicial.html"><img src="images/back.png" width="45px" width="45px">Voltar</a>
                         <a href="RegisterAthletes.html"><img src="images/add.png" width="45px" width="45px">Cadastar Novo Jogador</a>
-                        <button type="button" class="btn btn-outline-primary float-end">Jogadores Titulares</button>
+                        <button type="button" class="btn btn-outline-primary float-end" data-bs-toggle="modal" data-bs-target="#ModalSenha">
+                          Jogadores Titulares
+                        </button>
+                        <!-- Modal Centralizado -->
+                        <div class="modal fade" id="ModalSenha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Escalação para a próxima partida: </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <table class="table-bordered">
+                                        <tr>
+                                            <th>Camisa</th>
+                                            <th>Nome</th>
+                                            <th>Posição</th>
+                                            <th>Idade</th>
+                                        </tr>
+                                        <tr>
+                                          <td>12</td>
+                                          <td>Julian Silva Ribeiro</td>
+                                          <td>Goleiro</td>
+                                          <td>30</td>
+                                        </tr>
+                                        <tr>
+                                          <td>2</td>
+                                          <td>Thiago Barros Souza</td>
+                                          <td>Lateral-Direito</td>
+                                          <td>21</td>
+                                        </tr>
+                                        <tr>
+                                          <td>33</td>
+                                          <td>Matheus Cavalcanti Castro</td>
+                                          <td>Zagueiro</td>
+                                          <td>27</td>
+                                        </tr>
+                                        <tr>
+                                          <td>4</td>
+                                          <td>Leonardo Martins Almeida</td>
+                                          <td>Zagueiro</td>
+                                          <td>33</td>
+                                        </tr>
+                                        <tr>
+                                          <td>6</td>
+                                          <td>Marcos Almeida Santos</td>
+                                          <td>Lateral-Esquerdo</td>
+                                          <td>24</td>
+                                        </tr>
+                                        <tr>
+                                          <td>17</td>
+                                          <td>Enzo Cavalcanti Santos</td>
+                                          <td>Volante</td>
+                                          <td>29</td>
+                                        </tr>
+                                        <tr>
+                                          <td>8</td>
+                                          <td>Eduardo Azevedo Martins</td>
+                                          <td>Volante</td>
+                                          <td>27</td>
+                                        </tr>
+                                        <tr>
+                                          <td>10</td>
+                                          <td>Lucas Pinto Ribeiro</td>
+                                          <td>Meio-Campo</td>
+                                          <td>30</td>
+                                        </tr>
+                                        <tr>
+                                          <td>14</td>
+                                          <td>Renan Castro Araujo</td>
+                                          <td>Atacante</td>
+                                          <td>22</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Kauê Ferreira Gomes</td>
+                                            <td>Centro-Avante</td>
+                                            <td>31</td>
+                                        </tr>
+                                        <tr>
+                                          <td>11</td>
+                                          <td>Rafael Lima Cunha</td>
+                                          <td>Atacante</td>
+                                          <td>29</td>
+                                        </tr>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </footer>
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 

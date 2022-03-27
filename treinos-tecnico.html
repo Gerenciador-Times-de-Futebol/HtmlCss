@@ -25,7 +25,7 @@
 
             <ul class="nav flex-column bg-white mb-0">
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-dark font-italic">
+                    <a href="Inicial-tecnico.html" class="nav-link text-dark font-italic">
                         <i class="fa-solid fa-house-user mr-3 text-primary fa-fw"></i> Inicio
                     </a>
                 </li>
@@ -45,7 +45,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-dark font-italic">
+                    <a href="UserScreen-tecnico.html" class="nav-link text-dark font-italic">
                         <i class="fa-solid fa-gear mr-3 text-primary fa-fw"></i> Configurações usuario
                     </a>
                 </li>
@@ -136,9 +136,26 @@
                       </table>
                       <br><br>
                       <footer>
-                        <a href="#tela-inicial"><img src="images/back.png" width="45px" width="45px">Voltar</a>
-                        <a href="#agendar-treino"><img src="images/add.png" width="45px" width="45px">Agendar Treino</a>
-                        <button type="button" class="btn btn-outline-primary float-end">Enviar Lembrete aos Jogadores</button>
+                        <a href="Inicial-tecnico.html"><img src="images/back.png" width="45px" width="45px">Voltar</a>
+                        <a href="RegisterTraining.html"><img src="images/add.png" width="45px" width="45px">Agendar Treino</a>
+                        <button type="button" class="btn btn-outline-primary float-end" data-bs-toggle="modal" data-bs-target="#ModalSenha">
+                          Enviar Lembrete aos Jogadores 
+                      </button>
+                        <!-- Modal Centralizado -->
+                        <div class="modal fade" id="ModalSenha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Deseja enviar lembrete?</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                       </footer>
                       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
                     

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/UserScreen.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User</title>
+</head>
+
+<body>
+    <header>
+        <h1>Usuário</h1>
+        <hr />
+    </header>
+
+    <main>
+        <div class="d-flex justify-content-center">
+            <img src="images/user.png" alt="user" class="userimg" />
+        </div>
+        <div class="d-flex justify-content-center">
+            <p>Técnico João</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <p>O que deseja fazer?</p>
+        </div>
+    </main>
+
+    <footer>
+        <a href="Inicial-tecnico.html"><img src="images/arrow-left-black.png" alt="left-arrow" class="img" /></a>
+        <!-- modal username-->
+        <!-- Botão gatilho do modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalUser">
+          ALTERAR USUARIO 
+      </button>
+        <!-- Modal Centralizado -->
+        <div class="modal fade" id="ModalUser" tabindex="-1" aria-labelledby="ModalUser" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deseja mudar seu username?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="username">Digite seu novo username:</label>
+                        <input type="text" id="username" name="username">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- modal senha-->
+        <!-- Botão gatilho do modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalSenha">
+          ALTERAR SENHA 
+      </button>
+        <!-- Modal Centralizado -->
+        <div class="modal fade" id="ModalSenha" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deseja mudar de senha?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="senha">Digite sua nova senha:</label>
+                        <input type="password" id="senha" name="senha">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal email-->
+        <!-- Botão gatilho do modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalEmail">
+          ALTERAR E-MAIL 
+      </button>
+        <!-- Modal Centralizado -->
+        <div class="modal fade" id="ModalEmail" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Deseja mudar de email?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <label for="newmail">Digite seu novo email:</label>
+                        <input type="email" id="newmail" name="newmail">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</html>
