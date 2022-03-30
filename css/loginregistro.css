@@ -1,32 +1,47 @@
 .tela {
-  padding: 0;
-  height: auto;
+    padding: 0;
+    height: auto;
 }
 
 .entradas {
-  display: flex;
-  justify-content: center;
-  margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
 }
 
 .texto {
-  color: white;
-  font-family: monospace;
+    color: white;
+    font-family: monospace;
 }
 
 .esqueceu {
-  margin-top: 5px;
-  margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .whitetext {
-  color: white;
+    color: white;
 }
 
 #termos {
-  color: white;
+    color: white;
 }
 
 body {
-  background-image: url(../images/background_dashboard.png);
+    background-image: url(../images/background_dashboard.png);
+}
+
+.logbutt {
+    justify-content: center;
+    text-align: center;
+    margin-left: -45px;
+    width: 200px;
+    height: 40px;
+}
+
+.registerButton {
+    justify-content: center;
+    text-align: center;
+    width: 200px;
+    height: 40px;
 }
